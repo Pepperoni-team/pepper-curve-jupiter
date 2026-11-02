@@ -38,6 +38,15 @@ The paths are those of Pepper's own repository, so nothing is rewritten for this
   fixed lists; account 8, the creator's USDC account, is passed exactly while a revenue curve's raise is
   open. After graduation a token trades on its Raydium CPMM pool, which Jupiter routes already.
 
+## The `Swap` variant
+
+Until Jupiter gives the venue a `Swap` variant of its own, the SDK travels as
+`Swap::Placeholder { data: Some([direction]) }`: one byte, `0` a buy and `1` a sell
+(`DIRECTION_BUY`, `DIRECTION_SELL` in `src/swap.rs`), which `swap_instruction_data` turns, with the
+amounts, into the program's instruction data. Nothing is needed on Jupiter's side for it now. Once
+Jupiter assigns Pepper a variant of its own, we move the SDK to it: a small change in `src/swap.rs`,
+with the quote, the market and the account lists unchanged.
+
 ## Tests
 
 ```bash
