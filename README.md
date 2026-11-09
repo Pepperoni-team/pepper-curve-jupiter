@@ -7,8 +7,8 @@ priced in USDC; this crate lets Jupiter quote and route swaps on those curves.
 | | |
 |---|---|
 | Program | `CDPwGWGWbAE8FL5f2oVdzfkTutrnsKJcAcgqWktC3dwZ` (mainnet and devnet) |
-| Deployed build | executable hash `7d0b4fdee2c0f0f2b23c0c7783c69606e863ea34bab6341061a50487f10b679a`, verified by OtterSec (2026-11-01) |
-| Verified source | [`Pepperoni-team/custom-program` at `1256ece`](https://github.com/Pepperoni-team/custom-program/tree/1256ece6865e23ec5c35069bfbe5f4d2c7335d77), the commit OtterSec's build matched ([status](https://verify.osec.io/status/CDPwGWGWbAE8FL5f2oVdzfkTutrnsKJcAcgqWktC3dwZ)) |
+| Deployed build | N+3 since 2026-11-09, executable hash `699109070811c9aff4c51bba212d70d90410974eb6bc32f709436387f8511564` |
+| Verified source | [`Pepperoni-team/custom-program` at `770c33a`](https://github.com/Pepperoni-team/custom-program/tree/770c33aa9bc1e992a68e59e2d2883042cbf98e33), the commit whose verifiable build gives that hash ([OtterSec's status](https://verify.osec.io/status/CDPwGWGWbAE8FL5f2oVdzfkTutrnsKJcAcgqWktC3dwZ)) |
 | Upgrade authority | a Squads v4 multisig vault |
 | Global USDC config | `CuC2WeLhhwVA65gYCKk2Zu12kC5uGJSyriFKWJwkT9F9` (`UsdcConfig`, one address on every cluster) |
 | Market key | the curve's PDA (`CurveUsdc`, seeds and bump checked) |
