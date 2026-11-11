@@ -58,7 +58,8 @@ cargo test --locked
 41 tests, all passing on the deployed program's bytes: 26 unit tests; 7 pools written from the golden
 vectors; 4 devnet curves (an equity curve fresh and one buy away from graduation, a revenue curve inside
 and past its raise); 4 mainnet curves (two revenue curves inside their raise, two equity curves),
-snapshotted by Jupiter's test kit into `tests/fixtures/accounts/` and committed, so the suite runs
+snapshotted by Jupiter's test kit into `tests/fixtures/accounts/` (last on 2026-11-11, under the
+deployed build) and committed, so the suite runs
 offline. Jupiter's kit (`assert_pool_parity`) checks each quote's `out_amount` against what the program
 delivers in LiteSVM; the suite's own harness checks the source's change against `in_amount`, the fee
 accounts against `fee_amount`, both vaults and the curve's counters.
